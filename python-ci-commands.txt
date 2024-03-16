@@ -1,0 +1,15 @@
+Autoflake:
+
+autoflake --check --recursive --remove-all-unused-imports --remove-unused-variables --exclude ./venv .
+
+autoflake --in-place --recursive --remove-all-unused-imports --remove-unused-variables --exclude ./venv .
+
+Isort:
+
+isort --profile black --check-only --diff your_django_project_folder
+isort --profile black your_django_project_folder
+
+Black:
+
+black --check --diff your_django_project_folder
+black your_django_project_folder
